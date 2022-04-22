@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SonyAlpha</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         $(document).ready(function(){ 
@@ -61,10 +61,10 @@
         #scroll{width: 100px; height: 100px; position: fixed; left: 0; top: 0; background-color: #000; color: #fff; font-size: 50px; text-align: center;}
         body,html{height: 100%;}
         header{background-color: #000; width: 100%; height: 60px;}
-        #logo{float: left; width: 30px; height: 38px; margin-top: 11px; margin-left: 20px; position: relative; z-index: 1000;}
+        #logo{float: left; width: 30px; height: 38px; margin-top: 11px; margin-left: 20px; position: relative; z-index: 1000; cursor: pointer;}
         #logo>img{width: 100%;}
         #header_icon_menu{float: right; overflow: hidden; height: 22px; margin-right: 20px; margin-top: 16px;}
-        #header_icon_menu>li{float: left; margin-left: 20px; width: 22px; height: 22px;}
+        #header_icon_menu>li{float: left; margin-left: 20px; width: 22px; height: 22px; cursor: pointer;}
         #header_icon_menu>li:nth-child(2){position: relative; z-index: 1001;}
         #header_icon_menu>li:nth-child(3){position: relative; z-index: 1002;}
         #header_icon_menu>li>img{width: 100%;}
@@ -144,10 +144,10 @@
         #event_event>li{width: 100%; height: 130px; box-sizing: border-box; margin-top: 20px; overflow: hidden;}
         .event_left{width: 40%; height: 130px; float: left; background-color: #ddd; transition: 0.3s;}
         .event_left:hover{opacity: 0.8;}
-        #event_event>li:nth-child(1)>.event_left{background: url(20220101_01_6ud0_list.jpg)center no-repeat; background-size: cover;}
-        #event_event>li:nth-child(2)>.event_left{background: url(20211019_01_dpjh_list.jpg)center no-repeat; background-size: cover;}
-        #event_event>li:nth-child(3)>.event_left{background: url(20210707_01_apxu_list.jpg)center no-repeat; background-size: cover;}
-        #event_event>li:nth-child(4)>.event_left{background: url(20220302_01_smnz_list.jpg)center no-repeat; background-size: cover;}
+        #event_event>li:nth-child(1)>.event_left{background: url(20220101_01_6ud0_list.jpg) center no-repeat; background-size: cover;}
+        #event_event>li:nth-child(2)>.event_left{background: url(20211019_01_dpjh_list.jpg) center no-repeat; background-size: cover;}
+        #event_event>li:nth-child(3)>.event_left{background: url(20210707_01_apxu_list.jpg) center no-repeat; background-size: cover;}
+        #event_event>li:nth-child(4)>.event_left{background: url(20220302_01_smnz_list.jpg) center no-repeat; background-size: cover;}
         .event_right{width: 60%; height: 130px; float: right; background-color: #fff; padding: 10px 20px;word-spacing: -3px; border: 1px solid #aaa; border-left: none; box-sizing: border-box;}
         .event_right>h2{font-size: 16px; font-weight: 700;}
         .event_right>p{font-size: 12px; margin-top: 10px; color: #aaa;}
@@ -157,9 +157,9 @@
         #event_seminar>li>.event_right>button{padding: 5px 10px; font-size: 10px; background-color: #e75300; color: #fff; border: none;}
         #event_seminar>li>.event_right>h2{margin-top: 10px;}
         #event_seminar>li>.event_right>p{color: #666;}
-        #event_seminar>li:nth-child(1)>.event_left{background: url(seminar_img1.jpg)center no-repeat; background-size: cover;}
-        #event_seminar>li:nth-child(2)>.event_left{background: url(seminar_img2.jpg)center no-repeat; background-size: cover;}
-        #event_seminar>li:nth-child(3)>.event_left{background: url(seminar_img3.jpg)center no-repeat; background-size: cover;}
+        #event_seminar>li:nth-child(1)>.event_left{background: url(seminar_img1.jpg) center no-repeat; background-size: cover;}
+        #event_seminar>li:nth-child(2)>.event_left{background: url(seminar_img2.jpg) center no-repeat; background-size: cover;}
+        #event_seminar>li:nth-child(3)>.event_left{background: url(seminar_img3.jpg) center no-repeat; background-size: cover;}
         #event_seminar>li>div{text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
         #event_bt2{width: 100%; text-align: center; margin-top: 20px; margin-bottom: 50px; overflow: hidden; color: #fff; font-size: 14px; cursor: pointer;}
         .event_bt2_arrow{position: absolute; right: -15px; top: 0; transition: 0.3s;}
@@ -406,6 +406,6 @@
     <footer>
 
     </footer>
-    <div id="scroll"><h2>0</h2></div>
+    
 </body>
 </html>
