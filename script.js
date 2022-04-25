@@ -2,7 +2,7 @@ $(document).ready(function(){
     let footer_num = 0;
     $('.footer_more>li:nth-child(1)').click(function(){
         if(footer_num == 0){$('.footer_sub').slideDown();
-        $(this).css({'background-color':'#333'}).children('span').css({'transform':'rotate(180deg)'})
+        $(this).css({'background-color':'#2c2f39'}).children('span').css({'transform':'rotate(180deg)'})
         footer_num = 1;
     }    
     else if(footer_num == 1){$('.footer_sub').slideUp();
@@ -46,8 +46,8 @@ $(document).ready(function(){
        })
        $(window).scroll(function(){
           let sc= $('html,body').scrollTop()
-          if(sc==0){$('header').css({'position':'relative'})}
-          else{$('header').css({'position':'fixed'})}
+          if(sc<1){$('header').css({'position':'fixed'})}
+          if(sc>=1){$('header').css({'position':'relative'})}
            if(110<sc<770){
                 $('#magazine>h2').animate({'opacity':'1','marginTop':'0'})
                 $('#magazine>p').animate({'opacity':'1','marginTop':'10px'})
